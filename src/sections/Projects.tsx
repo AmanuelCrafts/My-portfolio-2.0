@@ -13,21 +13,10 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "E-commerce Website",
-    year: "2024",
-    title: "Full stack e-commerce Website not finished yet",
-    results: [
-      { title: "Full Stack" },
-      { title: "Good looking" },
-      { title: "Used MERN stack" },
-    ],
-    link: "https://sheger-store.vercel.app/",
-    image: Sheger,
-  },
-  {
     company: "Hibret Books",
     year: "2024",
-    title: "Books from Grade 9 to 12 with AI assistance",
+    title: "Hibret Books",
+    description: "Books from Grade 9 to 12 with AI assistance",
     results: [
       { title: "AI Integration" },
       { title: "Improved site speed by 50%" },
@@ -39,7 +28,8 @@ const portfolioProjects = [
   {
     company: "Ethio plus",
     year: "2022",
-    title: "The cloned version of Disney +",
+    title: "Ethio plus",
+    description: "The cloned version of Disney +",
     results: [
       { title: "Full stack" },
       { title: "better looking" },
@@ -51,7 +41,8 @@ const portfolioProjects = [
   {
     company: "Tesla clone",
     year: "2024",
-    title: "The cloned version of Tesla",
+    title: "Tesla clone",
+    description: "The cloned version of Tesla",
     results: [
       { title: "Used redux for state management" },
       { title: "Improved site speed by 50%" },
@@ -63,7 +54,8 @@ const portfolioProjects = [
   {
     company: "Admin Dashboard",
     year: "2023",
-    title: "Company management Admin Dashboard",
+    title: "Admin Dashboard",
+    description: "Company management Admin Dashboard",
     results: [
       { title: "Boosted sales by 20%" },
       { title: "Expanded customer reach by 35%" },
@@ -75,7 +67,8 @@ const portfolioProjects = [
   {
     company: "X Clone",
     year: "2024",
-    title: "The Clone of X previously called Twitter",
+    title: "X Clone",
+    description: "The Clone of X previously called Twitter",
     results: [
       { title: "Full Stack Web App" },
       { title: "Uses the MERN stack" },
@@ -87,7 +80,8 @@ const portfolioProjects = [
   {
     company: "Mood to Movie",
     year: "2024",
-    title: "Recommends Movie based on your mood",
+    title: "Mood to Movie",
+    description: "Recommends Movie based on your mood",
     results: [
       { title: "Simple UI/UX" },
       { title: "Uses the TMDB api" },
@@ -126,6 +120,9 @@ export const ProjectsSection = () => {
                   <h3 className="font-serif text-2xl md:text-4xl mt-2 md:mt-5">
                     {project.title}
                   </h3>
+                  <p className="font-light text-white/70 mt-5">
+                    <i>{project.description}</i>
+                  </p>
                   <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
                   <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                     {project.results.map((result) => (

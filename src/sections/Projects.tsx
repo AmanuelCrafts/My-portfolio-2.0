@@ -10,6 +10,8 @@ import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
 import Image from "next/image";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
+import Tikuret from "@/assets/images/tikuret.png";
+import Hustle from "@/assets/images/hustle.png";
 
 const portfolioProjects = [
   {
@@ -24,6 +26,28 @@ const portfolioProjects = [
     ],
     link: "https://hibretbooks.vercel.app/",
     image: HibretBooks,
+  },
+  {
+    company: "tikuret app",
+    year: "2025",
+    title: "Tikuret App",
+    description: "The Landing Page of Tikuret App",
+    results: [{ title: "SSR" }, { title: "better looking" }],
+    link: "https://tikuret-p80e08hdn-amanuelcrafts-projects.vercel.app/",
+    image: Tikuret,
+  },
+  {
+    company: "Hustle Hub",
+    year: "2025",
+    title: "Hustle Hub",
+    description: "Full Stack social media up for Hustlers",
+    results: [
+      { title: "Full stack" },
+      { title: "better looking" },
+      { title: "Used Postgres as a backend" },
+    ],
+    link: "https://hustle-hub-a.vercel.app/",
+    image: Hustle,
   },
   {
     company: "Ethio plus",
